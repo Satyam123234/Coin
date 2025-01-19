@@ -1,136 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Identity Verification Troubleshooting</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Customer Support</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1500x400') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .contact-form {
+            background: #ffffff;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
-<body class="bg-gray-100 font-sans">
-  <!-- Loading Animation -->
-  <div id="loading" class="fixed inset-0 bg-gray-100 flex items-center justify-center z-50">
-    <div class="animate-spin h-10 w-10 border-4 border-blue-500 border-t-transparent rounded-full"></div>
-  </div>
+<body>
 
-  <!-- Header -->
-  <header class="bg-white shadow-sm sticky top-0 z-10">
-    <div class="container mx-auto flex items-center justify-between p-4">
-      <a href="#" class="text-blue-500 text-2xl font-bold">coinbase</a>
-    </div>
-  </header>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">TV Support</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Breadcrumb -->
-  <nav class="bg-gray-200 py-2">
-    <div class="container mx-auto px-4 text-sm">
-      <a href="#" class="text-blue-500">Coinbase Help Center</a> >
-      <a href="#" class="text-blue-500">Getting started</a> >
-      <span class="text-gray-500">Identity verification troubleshooting</span>
-    </div>
-  </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="display-4">Welcome to TV Customer Support</h1>
+            <p class="lead">We are here to assist you with all your TV-related issues and queries.</p>
+        </br>
+            <a href="#contact" class="btn btn-primary btn-lg">Get Support</a>
+        </div>
+    </section>
 
-  <!-- Main Content -->
-  <main class="container mx-auto my-8 px-4">
-    <h1 class="text-2xl font-bold text-gray-800 mb-4">Identity verification troubleshooting</h1>
-    <p class="text-gray-700 mb-6">
-      This article provides solutions to common issues that may come up during the verification process.
-    </p>
-
-    <!-- Search Section -->
-    <div class="relative w-full md:w-1/2 mx-auto mb-8">
-      <input 
-        type="text" 
-        id="searchBox" 
-        placeholder="Search for issues" 
-        class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-        oninput="searchIssues()"
-      >
-      <div id="searchResults" class="absolute left-0 top-full mt-1 bg-white border border-gray-300 rounded w-full hidden"></div>
-    </div>
-
-    <!-- Basics Section -->
-    <section>
-      <h2 class="text-xl font-semibold text-gray-800 mb-3">Basics</h2>
-      <ul class="list-disc pl-6 text-gray-700">
-        <li>
-          Ensure your personal information matches exactly between your ID and Coinbase account, including your legal name, residence, date of birth, etc.
-        </li>
-        <li>
-          Even small discrepancies can cause a verification failure,so double check that all information is typed correctly on both your ID and profile.
-        </li>
-        <li>
-          Photos of your ID should be well-lit without glare, and with the entire document being visible. Carefully retake photos of your ID if it wasn't accepted. 
-        </li>
-        <li>
-          Try an alternative upload method like the mobile app or using a diffrent web browser.
-        </li>
-        <li>
-          Wait the required time if receiving upload errors,support cant't bypass this restraction
-        </li>
-      </ul>
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <i class="bi bi-tv display-4 text-primary"></i>
+                        <h5 class="mt-3">Technical Support</h5>
+                        <p>Expert assistance for hardware and software issues.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <i class="bi bi-gear display-4 text-primary"></i>
+                        <h5 class="mt-3">Installation Help</h5>
+                        <p>Guidance for installing and setting up your TV system.</p>
+                    </div>
+                </div>
+            </br>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <i class="bi bi-question-circle display-4 text-primary"></i>
+                        <h5 class="mt-3">Troubleshooting</h5>
+                        <p>Quick solutions for common issues and problems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- FAQ Section -->
-    <section class="mt-8">
-      <h2 class="text-xl font-semibold text-gray-800 mb-3">FAQs</h2>
-      <div class="space-y-4">
-        <div>
-          <button class="w-full text-left font-semibold text-gray-700" onclick="toggleFaq('faq1')">
-            Q1: Why is my verification failing?
-          </button>
-          <p id="faq1" class="hidden mt-2 text-gray-600">
-            Ensure your ID is clear and matches your account details exactly.
-          </p>
+    <section id="faq" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        </br>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            How do I reset my TV?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            To reset your TV, locate the reset button or use the settings menu. Refer to the user manual for detailed instructions.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Why is my screen black?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            A black screen can indicate a connection issue or power problem. Check your cables and ensure the TV is properly powered on.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            How can I update my TV firmware?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Firmware updates can be installed via the TV settings menu or a USB drive. Check the manufacturer’s website for instructions.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-          <button class="w-full text-left font-semibold text-gray-700" onclick="toggleFaq('faq2')">
-            Q2: How long does verification take?
-          </button>
-          <p id="faq2" class="hidden mt-2 text-gray-600">
-            Typically, verification takes 1-2 business days.
-          </p>
-        </div>
-      </div>
     </section>
-  </main>
+   
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2025 TV Customer Support. All Rights Reserved.</p>
+    </footer>
 
-  <!-- Footer -->
-  <footer class="bg-white shadow-sm mt-8">
-    <div class="container mx-auto p-4 text-center text-gray-600">
-      © 2024 Coinbase, Inc. All rights reserved.
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script>
-    // Loading Animation
-    window.addEventListener("load", () => {
-      document.getElementById("loading").classList.add("hidden");
-    });
-
-    // Search Functionality
-    const issues = ["Identity verification", "Login problems", "Payment issues", "Withdrawal limits"];
-    function searchIssues() {
-      const query = document.getElementById("searchBox").value.toLowerCase();
-      const results = issues.filter(issue => issue.toLowerCase().includes(query));
-      const resultsContainer = document.getElementById("searchResults");
-
-      if (query === "") {
-        resultsContainer.classList.add("hidden");
-        resultsContainer.innerHTML = "";
-        return;
-      }
-
-      resultsContainer.innerHTML = results
-        .map(issue => `<div class="p-2 hover:bg-gray-100 cursor-pointer">${issue}</div>`)
-        .join("");
-      resultsContainer.classList.remove("hidden");
-    }
-
-    // FAQ Toggle
-    function toggleFaq(faqId) {
-      const faq = document.getElementById(faqId);
-      faq.classList.toggle("hidden");
-    }
-  </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
