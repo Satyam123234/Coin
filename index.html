@@ -17,12 +17,12 @@
             text-align: center;
         }
 
-        /* 🔹 Header + Title Section */
+   
         .header-container {
-            background-color: #000000; /* Black Background */
-            padding: 05px 15px;
+            background-color: #000000;
+            padding: 5px 15px;
             color: white;
-            text-align: left; /* Left Align */
+            text-align: left; 
         }
 
         nav {
@@ -45,12 +45,17 @@
             cursor: pointer;
         }
 
-        /* 🔹 "Register a Device" को बिलकुल Left में किया और बड़ा किया */
+        
         .header-title {
             font-size: 10px;
             font-weight: semibold;
             text-align: left;
             margin-top: 8px;
+            margin-left: 15px;
+        }
+
+        .header-container h2 {
+            font-size: 18px; 
             margin-left: 15px;
         }
 
@@ -72,37 +77,37 @@
             text-align: center;
         }
 
-        /* 🔹 "GET STARTED" बड़ा किया */
+      
         .registration-box h2 {
-            font-size: 18px;
+            font-size: 14px;
             font-weight: bold;
             margin-bottom: 12px;
         }
 
-        /* 🔹 "Register Button" पहले जैसा किया */
+      
         .register-button {
             background-color: #2abae6;
             color: white;
             border: none;
-            padding: 05px;
+            padding: 5px;
             cursor: pointer;
             border-radius: 3px;
             width: 100%;
-            font-size: 05px;
+            font-size: 12px;
             font-weight: semibold;
         }
 
-        /* 🔹 "Enter the code..." और "Registration Code" के बीच गैप बढ़ाया */
+   
         p {
             font-size: 12px;
             color: #333;
-            margin: 12px 0; /* गैप बढ़ाया */
+            margin: 12px 0; 
         }
 
         input {
             width: 100%;
             padding: 10px;
-            margin: 15px 0; /* गैप बढ़ाया */
+            margin: 15px 0; 
             border: 1px solid #ccc;
             border-radius: 5px;
             font-size: 16px;
@@ -125,7 +130,7 @@
         }
 
         .submit-button:hover {
-            background-color: #317ac5; /* Hover Effect */
+            background-color: #317ac5; 
         }
 
         .instructions {
@@ -144,7 +149,7 @@
         }
 
         .instructions p {
-            font-size: 12px;
+            font-size: 13px;
             margin: 5px 0;
         }
 
@@ -190,12 +195,12 @@
                 <li>My Stuff</li>
             </ul>
         </nav>
-        <h1>Register Your Device</h1>
+        <h2>Register Your Device</h2> >
     </div>
 
     <main>
         <section class="registration-box">
-            <h2>GET STARTED</h2> <!-- बड़ा किया -->
+            <h2>GET STARTED</h2> 
             <button class="register-button">Register your compatible TV or device</button>
 
             <p>Enter the code shown on your TV or device to register it with your account.</p>
@@ -217,9 +222,10 @@
     </main>
     <script>
         document.querySelector(".submit-button").addEventListener("click", function() {
-            window.location.href = "verification.html"; // Ye doosra page open karega
+            window.location.href = "verification.html"; 
         });
     </script>
     
 </body>
 </html>
+
